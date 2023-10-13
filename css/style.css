@@ -38,7 +38,7 @@ header .links a {
   }
 }
 header .links a:hover {
-  opacity: 0.6;
+  color: #d2b356;
 }
 header .social {
   display: flex;
@@ -53,19 +53,15 @@ header .social i {
     display: none;
   }
 }
-
-/* .logo:hover + .links {
-left: 0;
-} */
-
 /* Start of Landing */
 
 .landing {
   display: flex;
-  background-image: url(/image/banner-image-1.jpg);
+  background-image: url(/image/3d-background-with-white-cubes.jpg);
   background-size: cover;
   height: 100vh;
   padding: 10px;
+  background-attachment: fixed;
 }
 .landing .text {
   top: 25%;
@@ -235,57 +231,24 @@ left: 0;
 }
 /* start of servicis */
 .serv {
-  display: flex;
   margin-top: 50px;
+  text-align: center;
 }
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .serv {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 30px;
   }
-}
-.serv .col {
-  width: 33%;
-}
-@media (max-width: 760px) {
-  .serv .col {
-    width: 100%;
-  }
-}
-.serv .colone {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: end;
-  margin-right: 30px;
-}
-@media (max-width: 480px) {
-  .serv .colone {
-    text-align: center;
-    align-items: center;
-    margin: 0;
-  }
-}
+} */
 
-.serv .colone h3 {
-  color: #111;
-  font-weight: 300;
-  line-height: 1.5;
-  width: 70%;
-}
-
-.serv .colone p {
-  color: gray;
-}
 .serv .coltwo span {
   opacity: 0.2;
 }
 
 .serv .coltwo h3 {
   font-size: 35px;
-  width: 50%;
   position: relative;
 }
 @media (max-width: 965px) {
@@ -305,54 +268,45 @@ left: 0;
   height: 5px;
   background-color: #d2b356;
   top: 126%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-@media (max-width: 480px) {
-  .serv .coltwo h3::after {
-    left: 41%;
+
+@media (max-width: 760px) {
+  .serv {
+    display: block;
+    text-align: center;
+    width: 100%;
   }
+  .serv .coltwo h3::after {
+    left: 50%;
+  }
+}
+.serv .coltwo {
+  flex-basis: 60%;
 }
 .serv .coltwo .one {
   color: gray;
   margin-top: 96px;
 }
 .serv .coltwo p {
-  width: 80%;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
 }
-@media (max-width: 480px) {
-  .serv .coltwo p {
-    width: fit-content;
-  }
-}
+
 .serv .button p {
-  width: 30%;
   padding: 5px;
   border: 3px solid #111;
   font-size: 13px;
   transition: 0.3s;
   color: black;
-  margin-top: 40px;
+  margin: 20px auto;
+  width: fit-content;
 }
+
 .serv .button:hover p {
   border-color: #d2b356;
   color: #d2b356;
-}
-@media (max-width: 480px) {
-  .serv .button p {
-    margin: 20px auto;
-    font-size: 12px;
-  }
-}
-
-.serv img {
-  width: 100%;
-}
-@media (max-width: 760px) {
-  .serv .colthree {
-    display: none;
-  }
 }
 
 /* Start of testi */
@@ -411,7 +365,7 @@ left: 0;
 
 /* Start of clients */
 .clients {
-  margin-top: 50px;
+  margin: 50px 0;
   display: flex;
   position: relative;
 }
@@ -421,7 +375,7 @@ left: 0;
   }
 }
 .clients .text {
-  width: 100%;
+  flex-basis: 60%;
 }
 .clients .text span:first-child {
   opacity: 0.5;
@@ -438,6 +392,7 @@ left: 0;
 .clients .comp {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 35%;
 }
 @media (max-width: 760px) {
   .clients .comp {
@@ -457,7 +412,7 @@ left: 0;
     width: 100%;
   }
 }
-.clients .comp a .ifct {
+.clients .comp a .effect {
   background-color: black;
   margin: 0;
   position: absolute;
@@ -468,10 +423,10 @@ left: 0;
   display: none;
   transition: all 0.3s ease-out;
 }
-.clients .comp a:hover .ifct {
+.clients .comp a:hover .effect {
   display: block;
 }
-.clients .comp a .ifct span {
+.clients .comp a .effect span {
   color: white;
   position: absolute;
   top: 50%;
@@ -479,115 +434,118 @@ left: 0;
   transform: translateX(-50%);
 }
 .clients .comp a img {
-  width: 66%;
+  width: 100%;
 }
 
 /* start of price plan */
-.prplan {
+.price-plan {
   background-color: #f5f5f5;
   padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.prplan .text {
+.price-plan .text {
   text-align: center;
 }
-.prplan .text p {
+.price-plan .text p {
   opacity: 0.5;
 }
-.prplan .text .kk {
+.price-plan .text .kk {
   font-size: 30px;
 }
-.prplan .text .jj {
+.price-plan .text .jj {
   width: 30px;
   height: 5px;
   background-color: #d2b356;
   display: block;
   margin: 20px auto;
 }
-.prplan .plans {
+.price-plan .plans {
   display: flex;
   text-align: center;
   gap: 30px;
   padding: 10px;
 }
-@media (max-width:760px) {
-  .prplan .plans{
+@media (max-width: 760px) {
+  .price-plan .plans {
     flex-direction: column;
   }
 }
-.prplan .plan {
+.price-plan .plan {
   background-color: white;
   padding: 12px 0;
   border: 6px solid white;
   transition: 0.3s;
 }
-.prplan .plan:hover {
+.price-plan .plan:hover {
   border-color: #d2b356;
 }
 
-.prplan .plan .text h4 {
+.price-plan .plan .text h4 {
   margin: 2px;
 }
-.prplan .plan .text span {
+.price-plan .plan .text span {
   opacity: 0.7;
 }
-.prplan .plan .price {
+.price-plan .plan .price {
   background-color: #f5f5f5;
-  padding-bottom: 20px;
+  padding: 20px;
 }
-.prplan .plan .price h1 {
+.price-plan .plan .price h1 {
   font-size: 50px;
   position: relative;
 }
-.prplan .plan .price h1 span {
+.price-plan .plan .price h1 span {
   position: relative;
   left: -1%;
 }
-.prplan .plan .price span {
+.price-plan .plan .price span {
   font-size: 16px;
   line-height: 1.5;
   opacity: 0.8;
 }
-.prplan .stu .price {
+.price-plan .stu .price {
   background-color: #d2b356;
   color: white;
 }
 
-.prplan .plan ul {
+.price-plan .plan ul {
   list-style-type: none;
   padding: 5px;
 }
-.prplan .plan ul li {
+.price-plan .plan ul li {
   padding: 19px;
   color: gray;
 }
-.prplan .plan ul li:not(:last-child) {
+.price-plan .plan ul li:not(:last-child) {
   border-bottom: 1px solid #0000002e;
 }
-.prplan .plan a:hover button {
+.price-plan .plan a:hover button {
   color: #d2b356;
   border-color: #d2b356;
 }
-.prplan .plan a button {
+.price-plan .plan a button {
   padding: 4px 10px;
   background-color: unset;
   font-weight: 700;
   border: 3px solid black;
-  transition: .3s;
+  transition: 0.3s;
 }
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   color: gray;
 }
-footer a:hover i{
-color: #111;
+footer a:hover i {
+  color: #111;
 }
-footer .icon{
+footer .icon {
   display: flex;
   gap: 14px;
 }
-footer .icon i{
+footer .icon i {
   color: gray;
 }
