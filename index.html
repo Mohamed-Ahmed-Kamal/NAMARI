@@ -15,17 +15,28 @@
   </head>
   <body>
     <header>
+      <button id="open"><i class="open fa-solid fa-bars"></i></button>
+      <button id="close"><i class="fa-solid fa-x"></i></button>
       <div class="logo">
         <h1>NAMARI</h1>
       </div>
+      <div class="sidebar" id="sid">
+        <a href="#home"> HOME </a>
+        <a href="#about"> ABOUT </a>
+        <a href="#gallary"> GALLARY </a>
+        <a href="#serv"> SERVICE </a>
+        <a href="#testi"> TESTMONIALS </a>
+        <a href="#clients"> CLIENT </a>
+        <a href="#price-plan"> PRICING </a>
+      </div>
       <div class="links">
-        <a href="#"> HOME </a>
-        <a href="#"> ABOUT </a>
-        <a href="#"> GALLARY </a>
-        <a href="#"> SERVICE </a>
-        <a href="#"> TESTMONIALS </a>
-        <a href="#"> CLIENT </a>
-        <a href="#"> PRICING </a>
+        <a href="#home"> HOME </a>
+        <a href="#about"> ABOUT </a>
+        <a href="#gallary"> GALLARY </a>
+        <a href="#serv"> SERVICE </a>
+        <a href="#testi"> TESTMONIALS </a>
+        <a href="#clients"> CLIENT </a>
+        <a href="#price-plan"> PRICING </a>
       </div>
       <div class="social">
         <a href="#">
@@ -43,7 +54,7 @@
       </div>
     </header>
 
-    <section class="landing">
+    <section id="home" class="landing">
       <div class="text">
         <h1>A FREE AND SIMPLE LANDING PAGE</h1>
         <p>
@@ -56,7 +67,7 @@
       </a>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="text">
         <h1>SUCCESS</h1>
         <h2>How We Help You To Sell Your Product</h2>
@@ -105,7 +116,7 @@
       </div>
     </section>
 
-    <section class="gallary">
+    <section id="gallary" class="gallary">
       <img src="image/gallery-image-1.jpg" alt="" />
       <img src="image/gallery-image-2.jpg" alt="" />
       <img src="image/gallery-image-3.jpg" alt="" />
@@ -114,8 +125,7 @@
       <img src="image/gallery-image-6.jpg" alt="" />
     </section>
 
-    <section class="serv">
-
+    <section id="serv" class="serv">
       <div class="coltwo col">
         <span>BELIEVING</span>
         <h3>Focusing On What Matters Most</h3>
@@ -145,7 +155,7 @@
       </div> -->
     </section>
 
-    <section class="testi">
+    <section id="testi" class="testi">
       <div class="text">
         <span>FEEDBACK</span>
         <h2>What our customers are saying</h2>
@@ -186,7 +196,7 @@
       </div>
     </section>
 
-    <section class="clients">
+    <section id="clients" class="clients">
       <div class="text">
         <span>TRUST</span>
         <h3>Companies who use our services</h3>
@@ -260,7 +270,7 @@
       </div>
     </section>
 
-    <section class="price-plan">
+    <section id="price-plan" class="price-plan">
       <div class="text">
         <p>YOUR CHOICE</p>
         <h3 class="kk">We have the right package for you</h3>
@@ -339,16 +349,17 @@
         <a href="#">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="">
+        <a href="#">
           <i class="fa-brands fa-google-plus-g"></i>
         </a>
-        <a href="">
+        <a href="#">
           <i class="fa-brands fa-twitter"></i>
         </a>
-        <a href="">
+        <a href="#">
           <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
